@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(`Logged in as ${username}`);
     }
 
-    // Function to handle existing user login
     function handleExistingUserLogin() {
         const savedUsername = localStorage.getItem('username');
         if (savedUsername) {
@@ -39,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Event listeners
     document.getElementById('loginForm').addEventListener('submit', handleFormSubmit);
     existingButton.addEventListener('click', handleExistingUserLogin);
 });
